@@ -12,29 +12,50 @@
     <title>Arandu</title>
 </head>
 <body>
-    <header class="border-bottom border-dark d-flex justify-content-start ps-5">
+    <div class="menu">
+        <div class="d-flex flex-column pane w-100">
+            <div class=" d-flex border-bottom border-secondary flex-grow-1  align-items-center justify-content-center gap-2">
+                <span class="fs-3 material-symbols-outlined">content_paste</span>
+                <p class="topico mt-3 fw-bolder">Projeto Arandu</p>
+            </div>
+            <div class=" d-flex border-bottom border-secondary flex-grow-1  align-items-center justify-content-center gap-2">
+                <span class="fs-3  material-symbols-outlined">groups</span>
+                <p class="topico mt-3 fw-bolder">Quem somos?</p>
+            </div>
+            <div class=" d-flex border-bottom border-secondary flex-grow-1  align-items-center justify-content-center  gap-2">
+                <span class="fs-3 ms-2  material-symbols-outlined">badge</span>
+                <p class="topico mt-3 fw-bolder">Sobre nós</p>
+            </div>
+            <div class=" d-flex border-bottom border-secondary flex-grow-1 align-items-center justify-content-center gap-2">
+                <span class="fs-3 ms-2 material-symbols-outlined">article</span>
+                <p class="topico mt-3 fw-bolder">Relatórios</p>
+            </div>
+        </div>
+    </div>
+    <header class="border-bottom border-dark d-flex justify-content-end p-5">
+        <span class="fs-1 icon-menu material-symbols-outlined">menu</span>
     </header>
     <section class="d-flex">
-        <aside class="border-end border-dark">
-            <div class="topicos d-flex flex-column gap-4">
-                <div class="d-flex w-100 gap-2">
+        <div class="divPage border-end border-dark">
+            <div class="topicos gap-4">
+                <div class="legenda d-flex w-100 gap-2">
                     <span class="fs-2 material-symbols-outlined">content_paste</span>
-                    <p class="fs-3 fw-bolder">Projeto Arandu</p>
+                    <p class="topico fw-bolder">Projeto Arandu</p>
                 </div>
-                <div class="d-flex w-100 gap-2">
+                <div class="legenda d-flex w-100 gap-2">
                     <span class="fs-2  material-symbols-outlined">groups</span>
-                    <p class="fs-3 fw-bolder">Quem somos?</p>
+                    <p class="topico fw-bolder">Quem somos?</p>
                 </div>
-                <div class="d-flex w-100">
-                    <span class="fs-2 material-symbols-outlined">accessibility</span>
-                    <p class="fs-3 fw-bolder">Porque criamos a iniciativa?</p>
-                </div>
-                <div class="d-flex w-100 gap-2">
+                <div class="legenda d-flex w-100 gap-2">
                     <span class="fs-2 ms-2  material-symbols-outlined">badge</span>
-                    <p class="fs-3 fw-bolder">Sobre nós</p>
+                    <p class="topico fw-bolder">Sobre nós</p>
+                </div>
+                <div class="legenda d-flex w-100 gap-2">
+                    <span class="fs-2 ms-2 material-symbols-outlined">article</span>
+                    <p class="topico fw-bolder">Relatórios</p>
                 </div>
             </div>
-        </aside>
+        </div>
         <main  class="d-flex flex-column align-items-center gap-5">
             <img src="./assets/arandu.jpeg" width="400px" height="400px" class="rounded-circle mb-5">
             <div class="description col-11">
@@ -45,5 +66,6 @@
         </main>
     </section>
     <footer></footer>
+    <script src="./script_ladingPage.js"></script>
 </body>
 </html>

@@ -13,6 +13,31 @@ body{
     overflow-y: scroll;
 }
 
+.scrollOff{
+    overflow: hidden;
+}
+
+.menu{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    right: 100%;
+    transition: 0.3s;
+    display: flex;
+    margin-top: 120px;
+    background-color: rgb(227, 243, 204);
+}
+
+.pane{
+    height: 91%;;
+}
+
+
+
+.showMenu{
+    right: 0%;
+}
+
 header{
     height: 150px;
     width: 100%;
@@ -29,8 +54,8 @@ footer{
     background-color: #78be67;
 }
 
-aside{
-    width: 850px;
+.divPage{
+    width: 500px;
     background-color: #c8dabd;
     padding: 0px;
 }
@@ -39,9 +64,13 @@ main{
     flex-grow: 1;
 }
 
-aside,main{
+.divPage,main{
     padding:13% 2% 2% 2%;
     height: 100%;
+}
+
+.topico{
+    font-size: 25px;
 }
 
 .icon{
@@ -59,15 +88,27 @@ aside,main{
     width: 850px;
     height: 400px;
     position: fixed;
+    display: flex;
+    flex-direction: column;
 }
 
 span{
     margin-top: 4px;
 }
 
+@media (max-width:1840px){
+    .divPage{
+        width: 700px;
+    }
+}
+
 @media (max-width:1266px){
+    header{
+        height: 120px;
+    }
+
     img{
-    margin-top: 200px;
+        margin-top: 200px;
     }
 
     section{
@@ -77,13 +118,26 @@ span{
         align-items: center;
     }
 
-    aside{
-        width: 100% !important;
-        height: 1%;
-        border-bottom: 0.5px solid rgba(0, 0, 0, 0.055);
+
+    .divPage{
+        display: none;
+    }
+
+    .menuLegenda{
+        flex-grow: 1;
+    }
+
+    .legenda{
+        height: 50px;
+    }
+
+    .topicos{
+        position:static;
+        flex-direction: row;
         width: 100%;
-        position: fixed;
-        margin-top: 150px;
+        height: 10%;
+        position: static;
+        padding-bottom: 8%;
     }
 }
 
@@ -92,15 +146,14 @@ span{
         width: 250px;
         height: 250px;
     }
-
-    .topicos{
-        position:static;
-        display: none;
-    }
 }
 
-@media (max-width:1525px){
-    aside{
-        width: 60%;
+
+@media (max-width:731px) {
+    .divPage{
+        height: 10%;
+    }
+    .topicos{
+        padding-bottom: 80px;
     }
 }
