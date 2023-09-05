@@ -92,6 +92,11 @@ span{
         width: 250px;
         height: 250px;
     }
+
+    .topicos{
+        position:static;
+        display: none;
+    }
 }
 
 @media (max-width:1525px){
