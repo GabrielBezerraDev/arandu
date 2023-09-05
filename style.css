@@ -1,0 +1,101 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+h1{
+    font-family: 'Anton', sans-serif;
+}
+
+body{
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+header{
+    height: 150px;
+    width: 100%;
+    background-color:#78be67;
+    position: fixed;
+}
+
+section{
+    height: 500%;
+}
+
+footer{
+    height: 100px;
+    background-color: #78be67;
+}
+
+aside{
+    width: 850px;
+    background-color: #c8dabd;
+    padding: 0px;
+}
+
+main{
+    flex-grow: 1;
+}
+
+aside,main{
+    padding:13% 2% 2% 2%;
+    height: 100%;
+}
+
+.icon{
+    width: 5%;
+    height: 40%;
+}
+
+.description{
+    height: 250px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.topicos{
+    width: 850px;
+    height: 400px;
+    position: fixed;
+}
+
+span{
+    margin-top: 4px;
+}
+
+@media (max-width:1266px){
+    img{
+    margin-top: 200px;
+    }
+
+    section{
+        flex-direction: column;
+        height: 500%;
+        width: 100%;
+        align-items: center;
+    }
+
+    aside{
+        width: 100% !important;
+        height: 1%;
+        border-bottom: 0.5px solid rgba(0, 0, 0, 0.055);
+        width: 100%;
+        position: fixed;
+        margin-top: 150px;
+    }
+}
+
+@media (max-width:626px){
+    img{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width:1525px){
+    aside{
+        width: 60%;
+    }
+}
