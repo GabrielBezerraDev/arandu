@@ -9,9 +9,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.2.5/angular-material.min.css" integrity="sha512-SudEgtLVV+Wip7/PrEh2zd0mO/PqR1w26NEJfhnHGxZdng3KYsLhpAZQG0mPMUykCYoKgdBc7/ItrUYzbC0aTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <title>Arandu</title>
 </head>
-<body>
+<body>      
+        <section class="d-flex">
+            <div class="divPage border-end border-dark">
+                <div class="topicos gap-4">
+                    <div class="legenda align-items-center d-flex gap-2">
+                        <span class="fs-2 mb-3 material-symbols-outlined">content_paste</span>
+                        <p class="topico fw-bolder">Projeto Arandu</p>
+                    </div>
+                    <div class="legenda align-items-center d-flex gap-2">
+                        <span class="fs-2  mb-3 material-symbols-outlined">groups</span>
+                        <p class="topico fw-bolder">Quem somos?</p>
+                    </div>
+                    <div class="legenda align-items-center d-flex gap-2">
+                        <span class="fs-2 ms-1 mb-3 material-symbols-outlined">badge</span>
+                        <p class="topico fw-bolder">Sobre nós</p>
+                    </div>
+                    <div class="legenda align-items-center d-flex  gap-2">
+                        <span class="fs-2 ms-1 mb-3 material-symbols-outlined">article</span>
+                        <p class="topico fw-bolder">Relatórios</p>
+                    </div>
+                </div>
+            </div>
     <div class="menu">
             <div class=" d-flex border-bottom border-secondary w-100 h-25  align-items-center justify-content-center gap-2">
                 <span class="fs-3 material-symbols-outlined">content_paste</span>
@@ -34,33 +57,57 @@
     <header class="border-bottom border-dark d-flex justify-content-end p-5">
         <span class="fs-1 icon-menu material-symbols-outlined">menu</span>
     </header>
-    <section class="d-flex">
-        <div class="divPage border-end border-dark">
-            <div class="topicos gap-4">
-                <div class="legenda d-flex w-100 gap-2">
-                    <span class="fs-2 material-symbols-outlined">content_paste</span>
-                    <p class="topico fw-bolder">Projeto Arandu</p>
-                </div>
-                <div class="legenda d-flex w-100 gap-2">
-                    <span class="fs-2  material-symbols-outlined">groups</span>
-                    <p class="topico fw-bolder">Quem somos?</p>
-                </div>
-                <div class="legenda d-flex w-100 gap-2">
-                    <span class="fs-2 ms-2  material-symbols-outlined">badge</span>
-                    <p class="topico fw-bolder">Sobre nós</p>
-                </div>
-                <div class="legenda d-flex w-100 gap-2">
-                    <span class="fs-2 ms-2 material-symbols-outlined">article</span>
-                    <p class="topico fw-bolder">Relatórios</p>
-                </div>
-            </div>
-        </div>
+
+
+
         <main  class="d-flex flex-column align-items-center gap-5">
             <img src="./assets/arandu.jpeg" width="400px" height="400px" class="rounded-circle mb-5">
-            <div class="description col-11">
+            <div class="description col-11 projeto">
                 <h1 class="fs-2 fw-bolder">SOBRE O PROJETO ARANDU</h1>
                 <p class="fs-3">O projeto arandu é uma iniciativa dos alunos da graduação de engenharia de software do instituto Federal do Amazonas. Objetivo desta iniciativa, é melhorar aprendizado dos alunos PCD da instituição, 
                 através da gamificação do conhecimento.</p>
+            </div>
+
+
+            <div class="description col-11" style="height: 900px;">
+                <h1 class="fs-2 fw-bolder">QUEM SOMOS</h1>
+                <img class="m-0" width="100%" height="600px" src="./assets/campo_verde.webp">
+                <p class="fs-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nihil voluptate commodi consectetur veritatis. Ad possimus officiis velit sed rerum odio, aliquid at laudantium doloribus eius nulla itaque dolorum amet.</p>
+            </div>
+
+            <div class="description col-11 profiles" >
+                <h1 class="fs-2 fw-bolder">SOBRE NÓS</h1>
+                <div class="profile border row">
+                    <div class="cardImg col-md-4">
+                        <img src="./assets/generic_profile.jpg" class="profileImg m-0 rounded-circle">
+                    </div>
+                    <div class="cardBody col-md-8"></div>
+                </div>
+                <br>
+                <br>
+                <div class="profile border row">
+                    <div class="cardImg col-md-4">
+                        <img src="./assets/generic_profile.jpg" class="profileImg m-0 rounded-circle">
+                    </div>
+                    <div class="cardBody col-md-8"></div>
+                </div>
+                <br>
+                <br>
+                <div class="profile border row">
+                    <div class="cardImg col-md-4">
+                        <img src="./assets/generic_profile.jpg" class="profileImg m-0 rounded-circle">
+                    </div>
+                    <div class="cardBody col-md-8"></div>
+                </div>
+            </div>
+
+            <div class="description col-11 d-flex flex-column gap-5" style="height: 900px;">
+                <select class="w-25 p-2 fs-1">
+                    <option>ffads</option>
+                </select>
+                <div class="w-100 h-100 bg-dark roudend-5">
+
+                </div>
             </div>
         </main>
     </section>
