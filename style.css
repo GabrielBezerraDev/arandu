@@ -35,7 +35,7 @@ body{
 }
 
 .pane{
-    height: 100vh;
+    height: 50%;
     display: block;
 }
 
@@ -101,6 +101,30 @@ main{
 
 span{
     margin-top: 4px;
+}
+
+@media (max-height:819px){
+    .menu{
+        height: 85%;;
+    }
+}
+
+@media (max-height:664px){
+    .menu{
+        height: 82%;;
+    }
+}
+
+@media (max-height:543px){
+    .menu{
+        height: 73%;
+    }
+}
+
+@media (max-height:366px){
+    .menu{
+        height: 67%;
+    }
 }
 
 @media (max-width:1840px){
