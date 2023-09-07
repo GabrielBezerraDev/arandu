@@ -17,13 +17,18 @@ body{
     overflow: hidden;
 }
 
+.icon-menu{
+    display: none !important;
+    cursor: pointer;
+}
+
 .menu{
     height: 100%;
     width: 100%;
-    position: absolute;
+    position: fixed;
     right: 100%;
     transition: 0.3s;
-    display: flex;
+    display: none;
     margin-top: 120px;
     background-color: rgb(227, 243, 204);
 }
@@ -138,6 +143,14 @@ span{
         height: 10%;
         position: static;
         padding-bottom: 8%;
+    }
+
+    .icon-menu{
+        display: block !important;
+    }
+
+    .menu{
+        display: flex;
     }
 }
 
