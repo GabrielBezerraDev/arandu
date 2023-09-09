@@ -8,13 +8,31 @@ h1{
     font-family: 'Anton', sans-serif;
 }
 
-body{
-    height: 100vh;
-    overflow-y: scroll;
+body, html{
+    height: 5000px !important;
 }
+
+
 
 header{
     z-index: 1;
+    height: 160px !important;
+}
+
+img.slide{
+    margin: 0px;
+}
+
+.main-icon{
+    width: 80px;
+    height: 200px;
+}
+
+.relatorio{
+    box-shadow: 2px 3px #888888;
+    border: 1px solid gray;
+    overflow-y: auto;
+    overflow: hidden;
 }
 
 .profile{
@@ -48,12 +66,10 @@ header{
 }
 
 .icon-menu{
-    display: none !important;
     cursor: pointer;
 }
 
 .legenda{
-    width: 30%;
     border-radius: 20px;
     padding: 15px 0px 0px 15px;
 }
@@ -96,9 +112,6 @@ header{
     position: fixed;
 }
 
-section{
-    height: 500%;
-}
 
 footer{
     height: 100px;
@@ -111,9 +124,6 @@ footer{
     padding: 0px;
 }
 
-main{
-    flex-grow: 1;
-}
 
 .divPage,main{
     padding:13% 2% 2% 2%;
@@ -127,12 +137,6 @@ main{
 .icon{
     width: 5%;
     height: 40%;
-}
-
-.description{
-    height: 250px;
-    text-align: justify;
-    text-justify: inter-word;
 }
 
 .topicos{
@@ -160,6 +164,10 @@ span{
 }
 
 @media (max-width:767px){
+
+    body,html{
+    height: 5700px !important;
+    }
 
     .profileImg{
         width: 50%;
