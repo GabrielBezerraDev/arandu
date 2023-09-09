@@ -35,6 +35,15 @@ img.slide{
     overflow: hidden;
 }
 
+
+.btnSlide{
+    background-color: rgba(34, 255, 0, 0.56);
+}
+
+.btnSlide:hover{
+    background-color: rgb(0, 255, 106);
+}
+
 .profile{
     border-radius: 20px;
     box-shadow: 2px 3px #888888;
