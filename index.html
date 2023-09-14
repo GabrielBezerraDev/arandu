@@ -47,7 +47,7 @@
         <span class="fs-1 icon-menu material-symbols-outlined" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">menu</span>
     </header>
     <main class="page">
-        <img src="./assets/arandu.jpeg" width="90%" class="rounded-circle">
+        <img src="./assets/arandu.jpeg"  width="90%" class="rounded-circle">
         <div class="template" >
             <h1>Sobre o Projeto Arandu</h1>
             <hr>
@@ -59,13 +59,13 @@
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="./assets/campo_verde.webp" height="800px" class="d-block w-100" alt="">
+                <img class="img-c" src="./assets/campo_verde.webp" height="800px" class="d-block w-100" alt="">
               </div>
               <div class="carousel-item">
-                <img src="/assets/sonic.jpeg" height="800px"  class="d-block w-100" alt="...">
+                <img class="img-c" src="/assets/sonic.jpeg" height="800px"  class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="./assets/pinguin.jpeg" height="800px"  class="d-block w-100" alt="...">
+                <img class="img-c" src="./assets/pinguin.jpeg" height="800px"  class="d-block w-100" alt="...">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -81,7 +81,7 @@
           <div class="template" >
             <h1>QUEM SOMOS</h1>
             <hr>
-            <p class="fs-3 description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia omnis labore veritatis possimus ad tenetur doloribus corrupti ex, deleniti temporibus, debitis sunt? Soluta commodi esse nostrum, repellendus deleniti earum laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, quisquam nostrum! Rem officia ratione eveniet labore adipisci perspiciatis eos doloremque quae in, iste corporis ex reiciendis repellendus veritatis aliquid nisi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos veniam perferendis adipisci ipsa dolorum architecto consequuntur reprehenderit accusamus, inventore, enim tempore! Architecto quas eveniet nulla fuga perspiciatis eos, quia dicta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, porro aliquid! Dicta mollitia adipisci iusto quia repellat praesentium, officia soluta! Sequi doloremque quia eveniet consequatur facere fugiat, quis qui laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, aspernatur mollitia? Soluta, asperiores officia sapiente voluptatibus dolore, itaque natus, architecto nobis tenetur ab blanditiis delectus doloribus perferendis! Perferendis, blanditiis soluta.</p>
+            <p class="font-size description ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia omnis labore veritatis possimus ad tenetur doloribus corrupti ex, deleniti temporibus, debitis sunt? Soluta commodi esse nostrum, repellendus deleniti earum laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, quisquam nostrum! Rem officia ratione eveniet labore adipisci perspiciatis eos doloremque quae in, iste corporis ex reiciendis repellendus veritatis aliquid nisi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos veniam perferendis adipisci ipsa dolorum architecto consequuntur reprehenderit accusamus, inventore, enim tempore! Architecto quas eveniet nulla fuga perspiciatis eos, quia dicta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, porro aliquid! Dicta mollitia adipisci iusto quia repellat praesentium, officia soluta! Sequi doloremque quia eveniet consequatur facere fugiat, quis qui laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, aspernatur mollitia? Soluta, asperiores officia sapiente voluptatibus dolore, itaque natus, architecto nobis tenetur ab blanditiis delectus doloribus perferendis! Perferendis, blanditiis soluta.</p>
     
         </div>
 
@@ -100,13 +100,13 @@
             <div class="col-md-8 p-5">
                 <div class="card-body">
                     <h1 class="card-title">Gabriel Bezerra de Jesus</h1>
-                    <p class="card-text">Estudante no instituto Federal do Amazonas no curso Engenharia de Software. Apaixonado por tecnologia e empenhado por trazer soluções tecnologicas para causas como essa.</p>
-                    <div class="d-flex gap-5">
-                        <div class="d-flex gap-3 cursor-pointer likedin">
+                    <p class="card-text font-size">Estudante no instituto Federal do Amazonas no curso Engenharia de Software. Apaixonado por tecnologia e empenhado por trazer soluções tecnologicas para causas como essa.</p>
+                    <div class="d-flex row mt-5 redes">
+                        <div class="d-flex gap-3 cursor-pointer likedin col-md-6 col-lg-3" onclick="redirect('https://www.linkedin.com/in/gabriel-bezerra-8a0789239/')">
                             <i class=" fa-brands fa-linkedin fs-1 mt-2"></i>
                             <span class="fs-1 fw-bolder">Likedin</span>
                         </div>
-                        <div class="d-flex gap-3">
+                        <div class="d-flex gap-3 col-md-6 col-lg-4 cursor-pointer" onclick="redirect('https://github.com/GabrielBezerraDev')">
                             <i class="fa-brands fa-github fs-1 mt-2"></i>
                             <span class="fs-1 fw-bolder">GitHub</span>
                         </div>
@@ -125,7 +125,7 @@
             <div class="col-md-8 p-5">
                 <div class="card-body">
                 <h1 class="card-title">Card title</h1>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text font-size">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
             </div>
@@ -140,7 +140,7 @@
             <div class="col-md-8 p-5">
                 <div class="card-body">
                 <h1 class="card-title">Card title</h1>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text font-size">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
             </div>
@@ -155,7 +155,7 @@
             <div class="col-md-8 p-5">
                 <div class="card-body">
                 <h1 class="card-title">Card title</h1>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text font-size">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
             </div>
@@ -170,7 +170,7 @@
             <div class="col-md-8 p-5">
                 <div class="card-body">
                 <h1 class="card-title">Card title</h1>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text font-size">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
             </div>
@@ -185,7 +185,7 @@
             <div class="col-md-8 p-5">
                 <div class="card-body">
                 <h1 class="card-title">Card title</h1>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text font-size">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
             </div>
@@ -200,7 +200,7 @@
             <div class="col-md-8 p-5">
                 <div class="card-body">
                 <h1 class="card-title">Card title</h1>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text font-size">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
             </div>
@@ -216,7 +216,7 @@
         <div class="template">
             <h1>TÍTULO DO RELATÓRIO</h1>
             <hr>
-            <p class="fs-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores aut facere consequuntur maxime necessitatibus nulla vel, itaque optio suscipit molestias quisquam dignissimos beatae voluptatum dolores sed magni, ratione voluptas perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur unde nesciunt tempora error magnam dolorum similique excepturi quod, quidem, fugiat iure eveniet! Nulla possimus sequi cupiditate odit quod perspiciatis eos. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis consequuntur maiores quam libero rem, ab excepturi pariatur odit ipsum iste rerum tempore harum deleniti obcaecati quasi provident soluta. Sit, ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolorum quod distinctio quis earum consequuntur in odio. Eum optio sit autem nemo obcaecati cupiditate ab et, incidunt porro. Voluptatum, harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quae soluta eligendi consectetur quod necessitatibus commodi molestias alias quasi aspernatur illum sint ullam, vero cupiditate quas, explicabo, in repellendus eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates explicabo exercitationem eaque maiores corrupti mollitia quasi consequatur! Quae quo animi quos? Id laboriosam vel nostrum consequatur unde ratione corporis possimus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas itaque repellat sint mollitia nisi. Molestiae impedit hic perspiciatis incidunt minima totam earum. Hic voluptatem, perferendis iusto nemo excepturi rem incidunt?</p>
+            <p class="font-size">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores aut facere consequuntur maxime necessitatibus nulla vel, itaque optio suscipit molestias quisquam dignissimos beatae voluptatum dolores sed magni, ratione voluptas perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur unde nesciunt tempora error magnam dolorum similique excepturi quod, quidem, fugiat iure eveniet! Nulla possimus sequi cupiditate odit quod perspiciatis eos. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis consequuntur maiores quam libero rem, ab excepturi pariatur odit ipsum iste rerum tempore harum deleniti obcaecati quasi provident soluta. Sit, ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolorum quod distinctio quis earum consequuntur in odio. Eum optio sit autem nemo obcaecati cupiditate ab et, incidunt porro. Voluptatum, harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quae soluta eligendi consectetur quod necessitatibus commodi molestias alias quasi aspernatur illum sint ullam, vero cupiditate quas, explicabo, in repellendus eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates explicabo exercitationem eaque maiores corrupti mollitia quasi consequatur! Quae quo animi quos? Id laboriosam vel nostrum consequatur unde ratione corporis possimus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas itaque repellat sint mollitia nisi. Molestiae impedit hic perspiciatis incidunt minima totam earum. Hic voluptatem, perferendis iusto nemo excepturi rem incidunt?</p>
         </div>
 
     </main>
