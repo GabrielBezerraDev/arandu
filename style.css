@@ -4,78 +4,45 @@
     list-style: none;
 }
 
-h1{
-    font-family: 'Anton', sans-serif;
-}
-
-body, html{
-    height: 5000px !important;
-}
-
-
-
 header{
-    z-index: 1;
-    height: 160px !important;
+    position: fixed;
+    background-color: rgb(36, 175, 36);
+    width: 100%;
+    height: 150px;
+    top: 0px;
 }
 
-img.slide{
-    margin: 0px;
-}
-
-.main-icon{
-    width: 80px;
-    height: 200px;
-}
-
-.relatorio{
-    box-shadow: 2px 3px #888888;
-    border: 1px solid gray;
-    overflow-y: auto;
-    overflow: hidden;
-}
-
-
-.btnSlide{
-    background-color: rgba(34, 255, 0, 0.56);
-}
-
-.btnSlide:hover{
-    background-color: rgb(0, 255, 106);
-}
-
-.profile{
-    border-radius: 20px;
-    box-shadow: 2px 3px #888888;
-}
-
-.profiles{
-    height: 1500px !important;
-}
-
-.profileImg{
-    width: 90%;
-    height: 90%;
-}
-
-.cardImg{
-    height: 400px;
-    border-right: 1px solid gray;
+.page{
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: center;
+    margin-top: 250px;
+    flex-direction: column;
+    padding-bottom: 60px;
+    gap: 40px;
 }
 
-.cardBody{
-    height: 400px;
+.template{
+    padding: 40px;
+    border: 1px solid grey;
+    border-radius: 30px;
+    width: 75%;
+    background-color: rgb(235, 244, 230);
 }
 
-.scrollOff{
-    overflow: hidden;
+.carousel{
+    width: 75%;
+    z-index: -1;
 }
 
-.icon-menu{
-    cursor: pointer;
+.card{
+    z-index: -1;
+    width: 75%;
+}
+
+.card-text{
+    font-size: 40px;
 }
 
 .legenda{
@@ -91,200 +58,19 @@ img.slide{
     cursor: pointer;
 }
 
-.menu{
-    height: 90%;
-    width: 100%;
-    position: fixed;
-    right: 100%;
-    transition: 0.3s;
-    display: none;
-    margin-top: 120px;
-    background-color: rgb(227, 243, 204);
-    overflow-y: scroll;
+.img-profile{
+    border: 2px solid grey;
+    border-radius: 8px;
 }
 
-.pane{
-    height: 50%;
-    display: block;
+.icon-menu{
+    color: white;
 }
 
-
-
-.showMenu{
-    right: 0%;
+.likedin{
+    color: rgb(15, 36, 170);
 }
 
-header{
-    height: 150px;
-    width: 100%;
-    background-color:#78be67;
-    position: fixed;
-}
-
-
-footer{
-    height: 100px;
-    background-color: #78be67;
-}
-
-.divPage{
-    width: 500px;
-    background-color: #c8dabd;
-    padding: 0px;
-}
-
-
-.divPage,main{
-    padding:13% 2% 2% 2%;
-    height: 100%;
-}
-
-.topico{
-    font-size: 25px;
-}
-
-.icon{
-    width: 5%;
-    height: 40%;
-}
-
-.topicos{
-    width: 850px;
-    height: 400px;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-}
-
-span{
-    margin-top: 4px;
-}
-
-@media (max-height:819px){
-    .menu{
-        height: 85%;;
-    }
-}
-
-@media (max-height:664px){
-    .menu{
-        height: 82%;;
-    }
-}
-
-@media (max-width:767px){
-
-    body,html{
-    height: 5700px !important;
-    }
-
-    .profileImg{
-        width: 50%;
-        height: 80%;
-    }
-
-    .profiles{
-        height: 2100px !important;
-    }
-    
-
-    .cardImg{
-        height: 250px;
-        border-bottom: 1px solid gray;
-        border-right: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-@media (max-height:543px){
-    .menu{
-        height: 73%;
-    }
-}
-
-@media (max-height:366px){
-    .menu{
-        height: 67%;
-    }
-}
-
-@media (max-width:1840px){
-    .divPage{
-        width: 700px;
-    }
-}
-
-@media (max-width:1266px){
-    header{
-        height: 120px;
-    }
-
-    img{
-        margin-top: 200px;
-    }
-
-    section{
-        flex-direction: column;
-        height: 500%;
-        width: 100%;
-        align-items: center;
-    }
-
-
-    .divPage{
-        display: none;
-    }
-
-    .menuLegenda{
-        flex-grow: 1;
-    }
-
-    .legenda{
-        height: 50px;
-    }
-
-    .topicos{
-        position:static;
-        flex-direction: row;
-        width: 100%;
-        height: 10%;
-        position: static;
-        padding-bottom: 8%;
-    }
-
-    .icon-menu{
-        display: block !important;
-    }
-
-    .menu{
-        display: block;
-    }
-}
-
-@media (max-width:626px){
-    img{
-        width: 250px;
-        height: 250px;
-    }
-
-    /* .projeto{
-        height: 600px !important;
-    } */
-}
-
-@media (max-width: 451px){
-    .projeto{
-        height: 430px;
-    }
-}
-
-@media (max-width:731px) {
-    .divPage{
-        height: 10%;
-    }
-    .topicos{
-        padding-bottom: 80px;
-    }
+.cursor-pointer{
+    cursor: pointer;
 }
