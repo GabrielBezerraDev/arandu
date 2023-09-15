@@ -4,13 +4,17 @@
     list-style: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 header{
     position: fixed;
-    background-color: rgb(36, 175, 36);
+    background-color: #98d075;
     width: 100%;
     height: 150px;
     top: 0px;
-    z-index: 1;
+    z-index: 2;
 }
 
 hr{
@@ -22,11 +26,23 @@ hr{
     to {top: 0px;}
 } 
 
-.show{
+.showAnimation{
     opacity: 1 !important;
     position: relative;
     animation: slide-up 2.2s forwards;
     transition: 2.2s;
+}
+
+.btnCarousel{
+    z-index: -1;
+}
+
+.disable{
+    display: none;
+}
+
+.actived{
+    display: block !important;
 }
 
 .hidden{
@@ -111,6 +127,10 @@ hr{
 @media (max-width:810px){
     header{
         height: 70px;
+    }
+
+    .page{
+        margin-top: 150px;
     }
 
     .iconMain{
