@@ -17,6 +17,22 @@ hr{
     z-index: 0;
 }
 
+@keyframes slide-up {
+    from {top: 60px;}
+    to {top: 0px;}
+} 
+
+.show{
+    opacity: 1 !important;
+    position: relative;
+    animation: slide-up 2.2s forwards;
+    transition: 2.2s;
+}
+
+.hidden{
+    opacity: 0;
+}
+
 .font-size{
     font-size: 40px;
 }
@@ -80,6 +96,14 @@ hr{
     color: rgb(15, 36, 170);
 }
 
+.instagram{
+    color: #c061cb;
+}
+
+.lattes{
+    color: #ff7800;
+}
+
 .cursor-pointer{
     cursor: pointer;
 }
@@ -114,7 +138,7 @@ hr{
     }
 }
 
-@media(max-width:1798px){
+/* @media(max-width:1798px){
     .redes{
         gap: 70px;
     }
@@ -130,5 +154,5 @@ hr{
     .redes{
         gap: 10px;
     }
-}
+} */
 

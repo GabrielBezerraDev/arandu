@@ -48,7 +48,7 @@
     </header>
     <main class="page">
         <img src="./assets/arandu.jpeg"  width="90%" class="rounded-circle">
-        <div class="template" >
+        <div class="template hidden" >
             <h1>Sobre o Projeto Arandu</h1>
             <hr>
             <p class="fs-3 description">O projeto arandu é uma iniciativa dos alunos da graduação de engenharia de software do instituto Federal do Amazonas. Objetivo desta iniciativa, é melhorar aprendizado dos alunos PCD da instituição, 
@@ -56,7 +56,7 @@
     
         </div>
 
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide hidden" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img class="img-c" src="./assets/campo_verde.webp" height="800px" class="d-block w-100" alt="">
@@ -78,21 +78,45 @@
             </button>
           </div>
 
-          <div class="template" >
+          <div class="template hidden" >
             <h1>QUEM SOMOS</h1>
             <hr>
             <p class="font-size description ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia omnis labore veritatis possimus ad tenetur doloribus corrupti ex, deleniti temporibus, debitis sunt? Soluta commodi esse nostrum, repellendus deleniti earum laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, quisquam nostrum! Rem officia ratione eveniet labore adipisci perspiciatis eos doloremque quae in, iste corporis ex reiciendis repellendus veritatis aliquid nisi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos veniam perferendis adipisci ipsa dolorum architecto consequuntur reprehenderit accusamus, inventore, enim tempore! Architecto quas eveniet nulla fuga perspiciatis eos, quia dicta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, porro aliquid! Dicta mollitia adipisci iusto quia repellat praesentium, officia soluta! Sequi doloremque quia eveniet consequatur facere fugiat, quis qui laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, aspernatur mollitia? Soluta, asperiores officia sapiente voluptatibus dolore, itaque natus, architecto nobis tenetur ab blanditiis delectus doloribus perferendis! Perferendis, blanditiis soluta.</p>
     
         </div>
 
-        <div class="w-75 mt-5">
+        <div class="w-75 mt-5 hidden">
             <h1>
                 Sobre nós
             </h1>
             <hr>
         </div>
 
-        <div class="card mb-3">
+        <div class="card mb-3 hidden">
+            <div class="row g-0">
+            <div class="col-md-4 d-flex align-items-center justify-content-center p-5">
+                <img src="./assets/professora.jpg" class="img-fluid img-profile" alt="...">
+            </div>
+            <div class="col-md-8 p-5">
+                <div class="card-body">
+                    <h1 class="card-title">Eline Ribeiro Minuzzo dos Santos</h1>
+                    <p class="card-text font-size">Ma. em Educação, Profa. do Ensino Básico, Técnico e Tecnológico (EBTT) do Instituto Federal de Educação, Ciência e Tecnologia do Amazonas (IFAM).</p>
+                    <div class="d-flex row mt-5 redes justify-content-around">
+                        <div class="d-flex gap-3 cursor-pointer instagram col-md-6 col-lg-3" onclick="redirect(' https://instagram.com/elineminuzzo?igshid=NzZlODBkYWE4Ng==')">
+                            <i class="fa-brands fa-instagram fs-1 mt-2"></i>
+                            <span class="fs-1 fw-bolder">Instagram</span>
+                        </div>
+                        <div class="d-flex gap-3 col-md-6 col-lg-4 cursor-pointer lattes" onclick="redirect('http://lattes.cnpq.br/3344261962312361')">
+                            <i class="fa-solid fa-book fs-1 mt-2"></i>
+                            <span class="fs-1 fw-bolder">Lattes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="card mb-3 hidden">
             <div class="row g-0">
             <div class="col-md-4 d-flex align-items-center justify-content-center p-5">
                 <img src="./assets/Gabriel.jpeg" class="img-fluid img-profile" alt="...">
@@ -101,7 +125,7 @@
                 <div class="card-body">
                     <h1 class="card-title">Gabriel Bezerra de Jesus</h1>
                     <p class="card-text font-size">Estudante no Instituto Federal do Amazonas, atualmente cursando Engenharia de Software. Sou um entusiasta apaixonado por tecnologia e estou empenhado em utilizar meu conhecimento para criar soluções tecnológicas que possam contribuir para causas significativas.</p>
-                    <div class="d-flex row mt-5 redes">
+                    <div class="d-flex row mt-5 redes justify-content-around">
                         <div class="d-flex gap-3 cursor-pointer likedin col-md-6 col-lg-3" onclick="redirect('https://www.linkedin.com/in/gabriel-bezerra-8a0789239/')">
                             <i class=" fa-brands fa-linkedin fs-1 mt-2"></i>
                             <span class="fs-1 fw-bolder">Likedin</span>
@@ -114,106 +138,116 @@
                 </div>
                 </div>
             </div>
-            </div>
         </div>
 
-        <div class="card mb-3">
+
+        <div class="card mb-3 hidden">
             <div class="row g-0">
             <div class="col-md-4 d-flex align-items-center justify-content-center p-5">
-                <img src="./assets/generic_profile.jpg" class="img-fluid rounded-circle" alt="...">
+                <img src="./assets/Júlia.jpeg" class="img-fluid img-profile" alt="...">
             </div>
             <div class="col-md-8 p-5">
                 <div class="card-body">
-                <h1 class="card-title">Card title</h1>
-                <p class="card-text font-size">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <h1 class="card-title">Júlia Donadelli Giroldo</h1>
+                <p class="card-text font-size">Aluna de Engenharia de Software, tenho 20 anos e gosto muito de jogos eletrônicos e inteligência artificial, com um carinho especial por visão computacional. Tenho experiência com desenvolvimento Front-end e espero poder contribuir positivamente com o projeto.</p>
+                <div class="d-flex row mt-5 redes justify-content-around">
+                    <div class="d-flex gap-3 cursor-pointer likedin col-md-6 col-lg-3" onclick="redirect('https://www.linkedin.com/in/julia-donadelli/')">
+                        <i class=" fa-brands fa-linkedin fs-1 mt-2"></i>
+                        <span class="fs-1 fw-bolder">Likedin</span>
+                    </div>
+                    <div class="d-flex gap-3 col-md-6 col-lg-4 cursor-pointer" onclick="redirect('https://github.com/juliadgiroldo')">
+                        <i class="fa-brands fa-github fs-1 mt-2"></i>
+                        <span class="fs-1 fw-bolder">GitHub</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        
+        <div class="card mb-3 hidden">
+            <div class="row g-0">
+            <div class="col-md-4 d-flex align-items-center justify-content-center p-5">
+                <img src="./assets/Samuel.jpeg" class="img-fluid img-profile" alt="...">
+            </div>
+            <div class="col-md-8 p-5">
+                <div class="card-body">
+                <h1 class="card-title">Samuel Barros Anijar</h1>
+                <p class="card-text font-size">Entusiasta de jogos e tecnologia, estudante de Engenharia de Software no Instituto Federal do Amazonas, em busca de unir minha paixão por inovação e desenvolvimento de software para criar experiências incríveis.</p>
                 </div>
             </div>
             </div>
         </div>
+        
 
-        <div class="card mb-3">
+        
+        
+        <div class="card mb-3 hidden">
             <div class="row g-0">
-            <div class="col-md-4 d-flex align-items-center justify-content-center p-5">
-                <img src="./assets/generic_profile.jpg" class="img-fluid rounded-circle" alt="...">
+                <div class="col-md-4 d-flex align-items-center justify-content-center p-5">
+                <img src="./assets/Marielle.jpeg" class="img-fluid img-profile" alt="...">
             </div>
             <div class="col-md-8 p-5">
                 <div class="card-body">
-                <h1 class="card-title">Card title</h1>
-                <p class="card-text font-size">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <h1 class="card-title">Marielle Mar Santos</h1>
+                <p class="card-text font-size">Estudante de Engenharia de Software no Insituto Federal do Amazonas, tenho 19 anos e sou natural de Salvador, com uma paixão por tudo que envolve leitura, água e tecnologia. Diagnosticada com TEA desde os 18, espero usar lógica, criatividade e tecnologia como um meio para mudanças positivas.</p>
+                <div class="d-flex row mt-5 redes justify-content-around">
+                    <div class="d-flex gap-3 cursor-pointer likedin col-md-6 col-lg-3" onclick="redirect('https://www.linkedin.com/in/marielle-mar-santos')">
+                        <i class=" fa-brands fa-linkedin fs-1 mt-2"></i>
+                        <span class="fs-1 fw-bolder">Likedin</span>
+                    </div>
+                    <div class="d-flex gap-3 col-md-6 col-lg-4 cursor-pointer" onclick="redirect('https://github.com/mariellemar')">
+                        <i class="fa-brands fa-github fs-1 mt-2"></i>
+                        <span class="fs-1 fw-bolder">GitHub</span>
+                    </div>
+                </div>
                 </div>
             </div>
-            </div>
         </div>
-
-        <div class="card mb-3">
+        </div>
+        
+        <div class="card mb-3 hidden">
             <div class="row g-0">
-            <div class="col-md-4 d-flex align-items-center justify-content-center p-5">
-                <img src="./assets/generic_profile.jpg" class="img-fluid rounded-circle" alt="...">
+                <div class="col-md-4 d-flex align-items-center justify-content-center p-5">
+                <img src="./assets/Josué.jpeg" class="img-fluid img-profile" alt="...">
             </div>
             <div class="col-md-8 p-5">
                 <div class="card-body">
-                <h1 class="card-title">Card title</h1>
-                <p class="card-text font-size">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <h1 class="card-title">Josué Alexandre Ferreira</h1>
+                <p class="card-text font-size">Bacharelando em Engenharia de Software pelo Institudo Federal de Educação, Ciência e Tecnologia do Amazonas (IFAM),  estagiário no Tribunal de Justiça do Estado do Amazonas.
+                    Integrante do projeto de pesquisa e ensino Aranouá (FAEPI/SAMSUNG). Apaixonado por jogos e tecnologia, sempre disposto a aprender e a ensinar.</p>
                 </div>
             </div>
-            </div>
         </div>
+    </div>
 
-        <div class="card mb-3">
-            <div class="row g-0">
-            <div class="col-md-4 d-flex align-items-center justify-content-center p-5">
-                <img src="./assets/generic_profile.jpg" class="img-fluid rounded-circle" alt="...">
-            </div>
-            <div class="col-md-8 p-5">
-                <div class="card-body">
-                <h1 class="card-title">Card title</h1>
-                <p class="card-text font-size">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    <div class="card mb-3 hidden">
+        <div class="row g-0">
+        <div class="col-md-4 d-flex align-items-center justify-content-center p-5">
+            <img src="./assets/Matheus.jpeg" class="img-fluid img-profile" alt="...">
+        </div>
+        <div class="col-md-8 p-5">
+            <div class="card-body">
+            <h1 class="card-title">Matheus Andrade de Oliveira</h1>
+            <p class="card-text font-size">Estudante do quarto período do curso de Engenharia de Software no Instituto Federal do Amazonas. Busco aplicar meus conhecimentos nos processos de modelagem e implementação de soluções tecnológicas que impactem positivamente a vida das pessoas.</p>
+            <div class="d-flex row mt-5 redes justify-content-around">
+                <div class="d-flex gap-3 cursor-pointer likedin col-md-6 col-lg-3" onclick="redirect('https://www.linkedin.com/in/matheus-andrade-05a1781b6/')">
+                    <i class=" fa-brands fa-linkedin fs-1 mt-2"></i>
+                    <span class="fs-1 fw-bolder">Likedin</span>
                 </div>
             </div>
-            </div>
         </div>
-
-        <div class="card mb-3">
-            <div class="row g-0">
-            <div class="col-md-4 d-flex align-items-center justify-content-center p-5">
-                <img src="./assets/generic_profile.jpg" class="img-fluid rounded-circle" alt="...">
-            </div>
-            <div class="col-md-8 p-5">
-                <div class="card-body">
-                <h1 class="card-title">Card title</h1>
-                <p class="card-text font-size">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-            </div>
-            </div>
         </div>
-
-        <div class="card mb-3">
-            <div class="row g-0">
-            <div class="col-md-4 d-flex align-items-center justify-content-center p-5">
-                <img src="./assets/generic_profile.jpg" class="img-fluid rounded-circle" alt="...">
-            </div>
-            <div class="col-md-8 p-5">
-                <div class="card-body">
-                <h1 class="card-title">Card title</h1>
-                <p class="card-text font-size">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-            </div>
-            </div>
         </div>
+    </div>
 
-        <div class="w-75">
+        <div class="w-75 hidden">
             <select class="form-select fs-1">
                 <option>Dia 15 de Setembro</option>
             </select>
         </div>
 
-        <div class="template">
+        <div class="template hidden">
             <h1>TÍTULO DO RELATÓRIO</h1>
             <hr>
             <p class="font-size">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores aut facere consequuntur maxime necessitatibus nulla vel, itaque optio suscipit molestias quisquam dignissimos beatae voluptatum dolores sed magni, ratione voluptas perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur unde nesciunt tempora error magnam dolorum similique excepturi quod, quidem, fugiat iure eveniet! Nulla possimus sequi cupiditate odit quod perspiciatis eos. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis consequuntur maiores quam libero rem, ab excepturi pariatur odit ipsum iste rerum tempore harum deleniti obcaecati quasi provident soluta. Sit, ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolorum quod distinctio quis earum consequuntur in odio. Eum optio sit autem nemo obcaecati cupiditate ab et, incidunt porro. Voluptatum, harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quae soluta eligendi consectetur quod necessitatibus commodi molestias alias quasi aspernatur illum sint ullam, vero cupiditate quas, explicabo, in repellendus eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates explicabo exercitationem eaque maiores corrupti mollitia quasi consequatur! Quae quo animi quos? Id laboriosam vel nostrum consequatur unde ratione corporis possimus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas itaque repellat sint mollitia nisi. Molestiae impedit hic perspiciatis incidunt minima totam earum. Hic voluptatem, perferendis iusto nemo excepturi rem incidunt?</p>
