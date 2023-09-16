@@ -1,10 +1,7 @@
 const selectRelatorio = document.getElementById("select");
-const selectIdioma = document.getElementById("mudarIdioma");
-let currentIdioma = "pt";
 
 function setSelectValue(){
     selectRelatorio.selectedIndex = 0;
-    selectIdioma.selectedIndex = 0;
 }
 setSelectValue();
 
@@ -12,13 +9,7 @@ function redirect(url){
     window.open(url, '_blank');
 }
 
-// selectRelatorio.addEventListener("change", ({target}) => {
-//     const value = target.selectedOptions[0].classList[0];
-//     let currentTexto = document.querySelector(".actived");
-//     currentTexto.classList.remove("actived");
-//     let texto = document.getElementById(`${value}`);
-//     texto.classList.add("actived");
-// });
+
 
 
 const oberserver = new IntersectionObserver(entries => {
