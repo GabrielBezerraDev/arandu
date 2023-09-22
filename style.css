@@ -31,6 +31,12 @@ p{
     to {top: 0px;}
 } 
 
+.link{
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+
 .showAnimation{
     opacity: 1 !important;
     position: relative;

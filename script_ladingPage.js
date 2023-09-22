@@ -1,5 +1,13 @@
 const selectRelatorio = document.getElementById("select");
 
+select.addEventListener("change", ({target}) => {
+    const value = target.selectedOptions[0].classList[0];
+    let currentTexto = document.querySelector(".actived");
+    currentTexto.classList.remove("actived");
+    let texto = document.getElementById(`${value}`);
+    texto.classList.add("actived");
+});
+
 function setSelectValue(){
     selectRelatorio.selectedIndex = 0;
 }
@@ -8,9 +16,6 @@ setSelectValue();
 function redirect(url){
     window.open(url, '_blank');
 }
-
-
-
 
 const oberserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
