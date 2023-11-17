@@ -33,6 +33,7 @@ animationLoad();
 function setSelectValue(){
     selectRelatorio.selectedIndex = 0;
 }
+
 setSelectValue();
 
 function redirect(url){
@@ -50,7 +51,7 @@ const oberserver = new IntersectionObserver(entries => {
 
 const hiddensElements = document.querySelectorAll(".hidden");
 hiddensElements.forEach(el => oberserver.observe(el));
-
+ 
 function scrollSection(section){
     window.location = `#${section}`
     let myOffcanvas = document.getElementById('offcanvasExample');
